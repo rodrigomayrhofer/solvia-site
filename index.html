@@ -162,7 +162,8 @@ details p { padding-bottom: 22px; color: var(--muted); max-width: 40em; }
 footer { position: relative; z-index: 1; border-top: 1px solid rgba(255,255,255,0.12); padding-block: 28px 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: var(--band-muted); }
 footer img { width: 120px; height: auto; display: block; }
 
-.float-wa { position: fixed; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 20; display: none; box-shadow: 0 14px 34px rgba(0,0,0,0.3); }
+.float-wa { position: fixed; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 20; display: inline-flex; box-shadow: 0 14px 34px rgba(0,0,0,0.3); }
+@media (min-width: 901px) { .float-wa { right: calc(28px + env(safe-area-inset-right, 0px)); bottom: calc(28px + env(safe-area-inset-bottom, 0px)); } }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-block: 24px 80px; }
